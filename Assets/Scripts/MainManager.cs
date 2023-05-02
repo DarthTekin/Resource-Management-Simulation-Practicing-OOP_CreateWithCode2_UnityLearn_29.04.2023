@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class MainManager : MonoBehaviour
 {
-    // Start and Update delted
+    // Start and Update deleted
 
-    public static MainManager Instance;
+    public static MainManager instance;
+    public Color teamColor;
 
     private void Awake()
     {
-        Instance = this;
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
         DontDestroyOnLoad(gameObject);
     }
 }

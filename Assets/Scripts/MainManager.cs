@@ -20,4 +20,10 @@ public class MainManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
+
+    [System.Serializable]
+    class SaveData
+    {
+        public Color teamColor;
+    }
 }

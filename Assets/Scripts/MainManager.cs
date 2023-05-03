@@ -27,4 +27,14 @@ public class MainManager : MonoBehaviour
     {
         public Color teamColor;
     }
+
+    public void SaveColor()
+    {
+        SaveData data = new SaveData();
+        data.teamColor = teamColor;
+
+        string json = JsonUtility.ToJson(data);
+
+        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
+    }
 }

@@ -48,4 +48,9 @@ public class MenuUIHandler : MonoBehaviour
 
         #endif
     }
+
+    public void SaveColorClicked()
+    {
+        MainManager.instance.SaveColor();
+    }
 }

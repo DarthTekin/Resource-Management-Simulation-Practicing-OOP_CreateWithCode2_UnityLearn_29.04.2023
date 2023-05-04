@@ -29,4 +29,10 @@ public class ProductivityUnit : Unit
             m_CurrentPile = null;
         }
     }
+
+    public override void GoTo(Building target)
+    {
+        ResetProductivity();
+        base.GoTo(target);
+    }
 }

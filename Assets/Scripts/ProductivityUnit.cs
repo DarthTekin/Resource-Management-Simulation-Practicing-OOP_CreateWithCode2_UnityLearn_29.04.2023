@@ -20,4 +20,13 @@ public class ProductivityUnit : Unit
             }
         }
     }
+
+    void ResetProductivity()
+    {
+        if (m_CurrentPile != null)
+        {
+            m_CurrentPile.ProductionSpeed /= ProductivityMultiplier;
+            m_CurrentPile = null;
+        }
+    }
 }

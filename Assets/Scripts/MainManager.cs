@@ -7,7 +7,7 @@ public class MainManager : MonoBehaviour
 {
     // Start and Update deleted
 
-    public static MainManager instance;
+    public static MainManager instance { get; private set; }
     public Color teamColor;
 
     private void Awake()

@@ -11,7 +11,11 @@ public class ResourcePile : Building
     public ResourceItem Item;
 
     private float m_ProductionSpeed = 0.5f;
-    public float ProductionSpeed;
+    public float ProductionSpeed
+    {
+        get { return m_ProductionSpeed; }
+        set { m_ProductionSpeed = value; }
+    }
 
     private float m_CurrentProduction = 0.0f;
 

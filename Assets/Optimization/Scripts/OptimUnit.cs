@@ -31,7 +31,9 @@ public class OptimUnit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Profiler.BeginSample("HAndling Time");
         HandleTime();
+        Profiler.EndSample();
 
         var t = transform;
 

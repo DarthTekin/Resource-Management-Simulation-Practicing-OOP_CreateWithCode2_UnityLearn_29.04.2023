@@ -35,4 +35,10 @@ public class ProductivityUnit : Unit
         ResetProductivity();
         base.GoTo(target);
     }
+
+    public override void GoTo(Vector3 position)
+    {
+        ResetProductivity();
+        base.GoTo(position);
+    }
 }

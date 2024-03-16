@@ -13,7 +13,10 @@ public class ResourcePile : Building
     private float m_ProductionSpeed = 0.5f;
     public float ProductionSpeed
     {
-        get { return m_ProductionSpeed; }
+        get 
+        { 
+            return m_ProductionSpeed; 
+        }
         set 
         {
             if (value < 0.0f)
